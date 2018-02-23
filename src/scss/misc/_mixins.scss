@@ -1,0 +1,103 @@
+@mixin leadTitle{
+    font-weight: 700;
+    font-size: 32px;
+    color:  #010101;
+    line-height: 18px;
+
+}
+
+@mixin titleDescr{
+    font-weight: 400;
+    font-size: 20px;
+    color:  #313841;
+    line-height: 24px;
+
+   
+
+}
+
+@mixin Descr{
+    font-weight: 400;
+    line-height: 20px;
+    font-size: 16px;
+}
+
+
+
+@mixin FeaturesTitle{
+    color:  #010101;
+    font-size: 22px;
+    
+    font-weight: 400;
+    line-height: 24px;
+}
+
+
+@mixin FeaturesDescr{
+    color:  #898989;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+@mixin FeaturesIcon{
+    color:  #010101;
+    font-size: 50px;
+    line-height: 32px;
+    font-weight: 400;
+    transform: scaleX(1.0079);
+}
+
+
+@mixin placeholder{
+        color:  #898989;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+       
+        padding: 19px 0 21px 21px;
+}
+
+
+
+@mixin large {
+    @media screen and (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin medium {
+    @media screen and (max-width: 992px) {
+        @content;
+    }
+}
+
+@mixin small {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin extraSmall {
+    @media screen and (max-width: 451px) {
+        @content;
+    }
+}
+
+@mixin responsive($width) {
+    @media screen and (max-width: $width) {
+        @content;
+    }
+}
+
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@mixin size($width, $height: auto) {
+    width: $width;
+    height: $height;
+}

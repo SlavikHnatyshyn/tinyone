@@ -1,0 +1,33 @@
+/**
+*
+* Basic page needs
+*
+**/
+@import "misc/mixins";
+@import url('https://use.fontawesome.com/releases/v5.0.6/css/all.css');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet');
+@import "../libs/normalize/normalize";
+
+/**
+*
+* Adjustment settings
+*
+**/
+
+@import "imports/adjustment";
+
+
+/**
+*
+* Layout
+*
+**/
+
+@import "imports/hero";
+@import "imports/header";
+@import "imports/nav";
+@import "imports/form__check";
+@import "imports/features";
+@import "imports/footer";
+
+

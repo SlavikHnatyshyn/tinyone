@@ -1,0 +1,186 @@
+.main-footer-wrap{
+   background: #010101;
+}
+
+
+.main__footer{
+   
+    padding-bottom: 120px;
+}
+
+
+.footer__title{
+    @include leadTitle;
+    color:  #fcdb00;
+    line-height: 32px;
+    text-align: center;
+    padding-top: 97px;
+}
+
+
+
+
+.footer__descr{
+    @include titleDescr;
+    color:  #898989;
+    text-align: center;
+    width: 738px;
+    display: block;
+    margin: 0 106px 0 101px;
+
+    @include medium{
+        margin:0;
+    }
+
+       
+    @include small{
+       
+     width: auto;
+         
+    }
+
+    @include extraSmall{
+        font-size: 18px;
+    }
+}
+
+
+.footer__form{
+    padding-top: 40px;
+    padding-bottom: 79px;
+    text-align: center;
+}
+
+.footer__form--field{
+   height: 50px;
+   width: 580px;
+   background: #fff;
+   border: none;
+   border-radius: 4px;
+
+  @include responsive (598px){
+      width: 526px;
+  }
+
+  
+  @include responsive (555px){
+      width: 450px;
+  }
+  
+  @include extraSmall{
+      width: 382px;
+  }
+
+  @include responsive (414px){
+      width: 312px;
+  }
+
+  @include responsive (321px){
+      width: 300px;
+  }
+
+
+}
+
+.footer__form--button{
+    border-style: solid;
+    border-color:  #010101;
+    background-color:  #fcdb00;
+    width: 126px;
+    height: 50px;
+    border-radius: 4px;
+    margin-left: 15px;
+    cursor: pointer;
+
+    @include small{
+        margin-top: 5px;
+    }
+}
+
+.button-submit{
+    text-transform: uppercase;  
+    color:  #010101;
+   
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    margin: 20px 20px;
+
+
+
+
+}
+
+
+
+
+::-webkit-input-placeholder {@include placeholder;}
+
+:-ms-input-placeholder{@include placeholder;}
+
+
+:-moz-placeholder {@include placeholder;}
+
+
+.footer__social-list{
+    margin: 0;
+    padding: 0;
+    list-style-type: 0;
+    text-align: center;
+}
+
+.footer__social-item{
+    display: inline-block;
+    padding: 0 31px 111px 0;
+}
+
+
+
+
+.footer__social-link{
+     color:  #fcdb00;
+     font-size: 42px;
+     font-weight: 400;
+     line-height: 32px;
+}
+
+
+.footer__contacnts{
+    margin: 0;
+    padding: 0;
+    list-style-type: 0;
+    display: flex;
+    justify-content: space-around;
+
+    @include responsive(598px){
+        flex-flow: row wrap;
+    }
+}
+
+
+
+
+.footer__contacnts--descr{
+    @include Descr;
+    color: #fff;
+    width: 182px;
+}
+
+.footer-column--first,
+.footer-column--second,
+.footer-column--third,
+.footer-column--fourth{
+    padding-top: 17px;
+}
+
+
+
+
+.footer__link{
+   @include Descr;
+    color: #fff;
+    text-decoration: none;
+    padding: 17px 10px;
+
+   
+}
