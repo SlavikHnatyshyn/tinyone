@@ -1,0 +1,45 @@
+$container-width:940px;
+
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    min-height: 100vh;
+    width: 100%;
+}
+
+body{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+   
+}
+
+
+.maincontent {
+    flex: 1 0;
+}
+
+.container {
+    width: $container-width;
+    padding: 0  0 0 14px;
+    margin: 0 auto;
+
+    @include responsive(1230px) {
+        width: 1024px;
+    }
+
+    @include responsive(1041px) {
+        width: 970px;
+    }
+
+    @include medium {
+        width: 750px;
+    }
+
+    @include small {
+        width: auto;
+    }
+}

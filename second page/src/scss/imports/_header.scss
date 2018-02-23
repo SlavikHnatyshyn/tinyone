@@ -1,0 +1,61 @@
+.inner-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.bars{
+    padding-top: 76px;
+    color:  #000000;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+
+.logo{
+    
+    padding: 60px 0 219px 0;
+}
+
+
+.social__list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    @include small{
+        display: flex;
+        flex-flow: column wrap;
+    }
+}
+
+
+.social__item{
+    display: inline-block;
+    padding: 73px 22px 0 0;
+
+    &:last-child{
+        padding-right: 0;
+    }
+
+    @include small{
+        
+        padding: 10px 22px 0 0;
+        
+        &:first-child{
+            padding-top:73px;
+        }
+    }
+}
+
+.social__link{
+   text-decoration: none;
+   
+   color:  $titlecolor;
+   font-size: 22px;
+   font-weight: 400;
+   line-height: 32px;
+
+}

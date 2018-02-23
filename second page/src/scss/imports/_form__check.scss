@@ -1,0 +1,36 @@
+.form__check{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.radio {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    margin: 10px 0 0 7px;
+  }
+  .radio + label {
+    position: relative;
+    padding: 0 0 0 18px;
+    cursor: pointer;
+  }
+  .radio + label:before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: 0;
+    background:  rgba(255, 255, 255, 0.5);
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+  
+  }
+ 
+ 
+  .radio:focus + label:before {
+    border-radius: 50%;
+    background-color:  #ffffff;
+    width: 14px;
+    height: 14px;
+  }
+  
